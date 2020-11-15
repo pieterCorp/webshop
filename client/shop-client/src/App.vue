@@ -1,15 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to the jungle"/>
+<div>  
+  <App-header/>
+  <Testcompo :message="msg"/>
+  <App-footer/>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import Testcompo from './components/testcomp.vue'
+import AppHeader from './components/Header.vue'
+import AppFooter from './components/Footer.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components: {   
+    Testcompo,
+    AppHeader,
+    AppFooter
+  },
+  data(){
+    return{
+      msg: "dit is een propstest"
+    }
   }
 }
 </script>
@@ -20,7 +33,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #2c3e50; 
 }
 </style>
