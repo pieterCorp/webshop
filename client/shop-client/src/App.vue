@@ -1,23 +1,26 @@
 <template>
 <div>  
   <App-header/>
-  <Testcompo :message="msg"/>
+  <Users/>
+  <!--<Testcompo :message="msg"/>-->
   <App-footer/>
 </div>
 </template>
 
 <script>
 
-import Testcompo from './components/testcomp.vue'
+//import Testcompo from './components/testcomp.vue'
 import AppHeader from './components/Header.vue'
 import AppFooter from './components/Footer.vue'
+import Users from './components/Users.vue'
 
 export default {
   name: 'App',
   components: {   
-    Testcompo,
+    //Testcompo,
     AppHeader,
-    AppFooter
+    AppFooter,
+    Users
   },
   data(){
     return{
